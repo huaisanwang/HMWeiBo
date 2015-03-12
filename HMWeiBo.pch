@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  HMWeiBo
+//
+//  Created by JsonWang on 15/3/1.
+//  Copyright (c) 2015年 JsonWang. All rights reserved.
+//
+
+#ifndef HMWeiBo_PrefixHeader_pch
+#define HMWeiBo_PrefixHeader_pch
+#endif
+//ios8PCH 文件需要自己添加，并且在项目工程编译设置里面做下设置，位置：  PrefixHeader ->YES->设置预编译文件的文件名等；
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+
+#define HWColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+
+#define HWRandowColor HWColor(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
+#endif
+
+
+
+
