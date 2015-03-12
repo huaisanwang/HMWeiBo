@@ -28,6 +28,7 @@
 		EAEEDF3D1A95AD840029FF45 /* HMWeiBo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAEEDF3B1A95AD840029FF45 /* HMWeiBo.xcdatamodeld */; };
 		EAEEDF451A95AD850029FF45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAEEDF441A95AD850029FF45 /* Images.xcassets */; };
 		EAEEDF541A95AD850029FF45 /* HMWeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEEDF531A95AD850029FF45 /* HMWeiBoTests.m */; };
+		EAF29C4B1AB18CA300AA54D6 /* HMNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF29C4A1AB18CA300AA54D6 /* HMNewFeatureController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		EAEEDF4D1A95AD850029FF45 /* HMWeiBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HMWeiBoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEEDF521A95AD850029FF45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAEEDF531A95AD850029FF45 /* HMWeiBoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMWeiBoTests.m; sourceTree = "<group>"; };
+		EAF29C491AB18CA300AA54D6 /* HMNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMNewFeatureController.h; sourceTree = "<group>"; };
+		EAF29C4A1AB18CA300AA54D6 /* HMNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMNewFeatureController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,6 +381,7 @@
 		EAEEDF5D1A95ADF70029FF45 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				EAF29C471AB18C7700AA54D6 /* NewFeature */,
 				EA1214B51AA446A6004DD088 /* Lib */,
 				EA80F6201AA43A5F00E9CC87 /* Discover */,
 				EA80F6261AA43A5F00E9CC87 /* Home */,
@@ -387,6 +391,23 @@
 				EA80F6471AA43A5F00E9CC87 /* Temp */,
 			);
 			path = classes;
+			sourceTree = "<group>";
+		};
+		EAF29C471AB18C7700AA54D6 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				EAF29C481AB18C7700AA54D6 /* Controller */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		EAF29C481AB18C7700AA54D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EAF29C491AB18CA300AA54D6 /* HMNewFeatureController.h */,
+				EAF29C4A1AB18CA300AA54D6 /* HMNewFeatureController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -493,6 +514,7 @@
 				EA80F65F1AA43B3A00E9CC87 /* AppDelegate.m in Sources */,
 				EA80F6591AA43A5F00E9CC87 /* HMTest2ViewController.m in Sources */,
 				EA80F6511AA43A5F00E9CC87 /* UIView+Extension.m in Sources */,
+				EAF29C4B1AB18CA300AA54D6 /* HMNewFeatureController.m in Sources */,
 				EA80F6521AA43A5F00E9CC87 /* HMNavigationController.m in Sources */,
 				EAD2B3C01AAB370C005AFF27 /* HMDropDownMenu.m in Sources */,
 				EABAEAF31AA89DAB000AB42F /* HMSearchBar.m in Sources */,

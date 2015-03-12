@@ -9,6 +9,7 @@
 
 #import "AppDelegate.h"
 #import "HMTabBarController.h"
+#import "HMNewFeatureController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,8 @@
     
     self.window =[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
-    self.window.rootViewController=[[HMTabBarController alloc] init];
+//    self.window.rootViewController=[[HMTabBarController alloc] init];
+    self.window.rootViewController=[[HMNewFeatureController alloc] init];
     
     [self.window makeKeyAndVisible];
     return YES;
