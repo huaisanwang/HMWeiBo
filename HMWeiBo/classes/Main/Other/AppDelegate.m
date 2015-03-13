@@ -22,8 +22,21 @@
     
     self.window =[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
-//    self.window.rootViewController=[[HMTabBarController alloc] init];
-    self.window.rootViewController=[[HMNewFeatureController alloc] init];
+    //版本对比，是否显示新特性
+    NSString *versionKey=@"CFBundleVersion";
+    //先获取沙盒中版本
+    NSString *oldVersion = [[NSUserDefaults standardUserDefaults] objectForKey:versionKey];
+    //再获取info.plist中版本
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[versionKey];
+    //对比
+    if ([oldVersion isEqualToString:currentVersion]) {
+        self.window.rootViewController=[[HMTabBarController alloc] init];
+    }else{
+        self.window.rootViewController=[[HMNewFeatureController alloc] init];
+        //保存当前新版本
+        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:versionKey];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
     
     [self.window makeKeyAndVisible];
     return YES;
